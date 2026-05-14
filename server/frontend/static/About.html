@@ -4,60 +4,66 @@
   <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1E3A5F; padding-top: 15px; padding-bottom: 15px;">
     <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <h2 style="padding-right: 5%; color: white;">Dealerships</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger; color: white;" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            <a class="nav-link active" style="font-size: larger; color: white;" href="/about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
+            <a class="nav-link" style="font-size: larger; color: white;" href="/contact">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-        <h1>About Us</h1>
+    <div class="card about-main-card" style="width: 80%; margin: auto; margin-top: 4%; border-radius: 14px; overflow: hidden; box-shadow: 0px 4px 12px rgba(0,0,0,0.15); border: none;">
+      <div class="banner" name="about-header" style="padding: 30px; text-align: center; background-color: #f8fbff;">
+        <h1 style="color: #1E3A5F; font-weight: 700; margin-bottom: 20px;">About Us</h1>
         Welcome to Best Cars, a nationwide dealership review platform helping customers find trusted dealerships 
         across the United States. Our goal is to make dealership information and customer reviews easy to access, 
         transparent, and useful.
       </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person1.png" alt="Card image">
+      <div style="display: flex; flex-direction: row; justify-content: center; gap: 25px; margin: 30px auto; flex-wrap: wrap;">
+      <div class="card" style="width: 20%; min-width: 150px; border-radius: 12px; overflow: hidden; border: none; box-shadow: 0px 4px 12px rgba(0,0,0,0.12); transition: transform 0.2s ease;">
+        <img class="card-img-top" src="/static/person1.png" alt="Card image" style="padding: 20px; border-radius: 50%;">
         <div class="card-body">
-          <p class="title">Jordan Smith</p>
-          <p>Sales Manager</p>
-          <p class="card-text">Jordan helps customers compare dealerships and find vehicles that fit their needs and budget.</p>
-          <p>jordan.smith@bestcars.com</p>
+          <p class="title" style="background-color: #1E3A5F; margin: 0; padding: 10px;">Jordan Smith</p>
+          <p style="font-weight: 600; color: #0F4C81; margin-top: 15px; text-align: center;">Sales Manager</p>
+          <p class="card-text" style="text-align: center; color: #444; line-height: 1.6; padding: 0 12px; margin-top: 12px;">
+            Jordan helps customers compare dealerships and find vehicles that fit their needs and budget.
+        </p>
+          <p style="color: #5f6b7a; font-size: 0.95rem; text-align: center;">jordan.smith@bestcars.com</p>
         </div>
       </div>
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person2.png" alt="Card image">
+      <div class="card" style="width: 20%; min-width: 150px; border-radius: 12px; overflow: hidden; border: none; box-shadow: 0px 4px 12px rgba(0,0,0,0.12); transition: transform 0.2s ease;">
+        <img class="card-img-top" src="/static/person2.png" alt="Card image" style="padding: 20px; border-radius: 50%;">
         <div class="card-body">
-          <p class="title">Taylor Johnson</p>
-          <p>Customer Support Lead</p>
-          <p class="card-text">Taylor supports customers by helping them navigate reviews, dealership details, and account questions.</p>
-          <p>taylor.johnson@bestcars.com</p>
+          <p class="title" style="background-color: #1E3A5F; margin: 0; padding: 10px;">Taylor Johnson</p>
+          <p style="font-weight: 600; color: #0F4C81; margin-top: 15px; text-align: center;">Customer Support Lead</p>
+          <p class="card-text" style="text-align: center; color: #444; line-height: 1.6; padding: 0 12px; margin-top: 12px;">
+            Taylor supports customers by helping them navigate reviews, dealership details, and account questions.
+        </p>
+          <p style="color: #5f6b7a; font-size: 0.95rem; text-align: center;">taylor.johnson@bestcars.com</p>
         </div>
       </div>
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person3.png" alt="Card image">
+      <div class="card" style="width: 20%; min-width: 150px; border-radius: 12px; overflow: hidden; border: none; box-shadow: 0px 4px 12px rgba(0,0,0,0.12); transition: transform 0.2s ease;">
+        <img class="card-img-top" src="/static/person3.png" alt="Card image" style="padding: 20px; border-radius: 50%;">
         <div class="card-body">
-          <p class="title">Marcus Johnson</p>
-          <p>Operations Manager</p>
-          <p class="card-text">Marcus works with dealership branches to keep information accurate, current, and reliable.</p>
-          <p>marcus.johnson@bestcars.com</p>
+          <p class="title" style="background-color: #1E3A5F; margin: 0; padding: 10px;">Marcus Johnson</p>
+          <p style="font-weight: 600; color: #0F4C81; margin-top: 15px; text-align: center;">Operations Manager</p>
+          <p class="card-text" style="text-align: center; color: #444; line-height: 1.6; padding: 0 12px; margin-top: 12px;">
+            Marcus works with dealership branches to keep information accurate, current, and reliable.
+        </p>
+          <p style="color: #5f6b7a; font-size: 0.95rem; text-align: center;">marcus.johnson@bestcars.com</p>
         </div>
       </div>
     </div>

@@ -1,38 +1,50 @@
-# fullstack_developer_capstone
+# Best Cars Dealership Review Platform
 
-## Project Overview
+Full Stack dealership review and vehicle inventory application built as part of the IBM Full Stack Software Developer Professional Certificate.
 
-This project is a Full Stack Developer Capstone application built as part of the IBM Full Stack Software Developer Professional Certificate.
-
-The application is a dealership review portal that allows users to:
-- View dealerships across the United States
-- Filter dealerships by state
-- View dealership reviews
-- Register and log in as authenticated users
-- Submit reviews for dealerships
-- Analyze review sentiment using a cloud-based sentiment analyzer service
+This project evolved beyond the original course requirements into a portfolio-focused full stack application featuring enhanced UI/UX styling, frontend refinements, microservice integration, and modern Git workflow practices.
 
 ---
 
-## Technologies Used
+# Project Overview
 
-### Frontend
+Best Cars is a dealership review platform that allows users to:
+
+- View dealerships across the United States
+- Filter dealerships by state
+- View dealership reviews
+- Register and authenticate users
+- Submit dealership reviews
+- Analyze review sentiment using a cloud-hosted sentiment analyzer
+- Search dealership vehicle inventory
+- Filter vehicles by:
+  - Make
+  - Model
+  - Year
+  - Mileage
+  - Price
+
+---
+
+# Technologies Used
+
+## Frontend
 - React
+- JavaScript
 - HTML
 - CSS
 - Bootstrap
-- JavaScript
 
-### Backend
+## Backend
 - Django
 - Node.js
 - Express
 
-### Databases
+## Databases
 - MongoDB
 - SQLite
 
-### DevOps / Cloud
+## DevOps / Cloud
 - Docker
 - Kubernetes
 - IBM Cloud Code Engine
@@ -40,12 +52,14 @@ The application is a dealership review portal that allows users to:
 
 ---
 
-## Features
+# Features
 
 - User authentication and session management
-- Dealer listing and filtering by state
+- Dealer listing and filtering
 - Dealer review system
-- Sentiment analysis for reviews
+- Vehicle inventory search
+- Vehicle filtering system
+- Review sentiment analysis
 - Dynamic React frontend
 - REST API integration
 - Dockerized backend services
@@ -54,39 +68,76 @@ The application is a dealership review portal that allows users to:
 
 ---
 
-## Microservices
+# UI / UX Enhancements
 
-### Django Application
+The original IBM capstone project was extended with a custom UI enhancement initiative focused on improving usability, frontend consistency, and portfolio-level presentation.
+
+Enhancements include:
+
+- Unified blue/white application theme
+- Responsive navigation styling
+- Modernized dealership layouts
+- Improved review panel styling
+- Enhanced login page UI
+- Reusable CSS component styling
+- Interactive hover effects and transitions
+- Improved spacing and visual hierarchy
+- Styled Search Cars inventory page
+- Refined About and Contact pages
+- Portfolio-focused frontend polish
+
+---
+
+# Microservices Architecture
+
+## Django Application
 Provides:
 - Frontend rendering
 - Authentication
 - Proxy services
+- API routing
 - Car make/model management
 
-### Dealership and Reviews Service
+## Dealership & Inventory Service
 Express + MongoDB microservice providing:
 - Dealer data
 - Review data
+- Vehicle inventory data
 - Review submission endpoints
 
-### Sentiment Analyzer Service
-Cloud-hosted sentiment analysis service used to evaluate review sentiment.
+## Sentiment Analyzer Service
+Cloud-hosted sentiment analysis service used to evaluate customer review sentiment.
 
 ---
 
-## Project Architecture
+# Project Architecture
 
-Browser
-→ React Frontend
-→ Django Application
-→ Django Proxy Services
-→ Express/MongoDB Microservices
-→ Sentiment Analyzer Service
+Browser  
+→ React Frontend  
+→ Django Application  
+→ Django Proxy Services  
+→ Express/MongoDB Microservices  
+→ Sentiment Analyzer Service  
 
 ---
 
-## Author
+# Git Workflow
 
-Donald Wilson
+Development enhancements were implemented using a dedicated feature branch workflow:
 
-IBM Full Stack Software Developer Professional Certificate Capstone Project
+- `main`
+  - Stable production-style branch
+
+- `enhancements`
+  - Active UI/UX enhancement branch
+
+Changes were tested locally before being merged into the main branch through GitHub pull requests.
+
+---
+
+# Local Development
+
+## Clone Repository
+
+```bash
+git clone <repo-url>

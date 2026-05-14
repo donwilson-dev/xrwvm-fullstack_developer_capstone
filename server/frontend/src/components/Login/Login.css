@@ -162,4 +162,7 @@
     align-items: center;
     min-height: 80vh;
   }
-  
+
+.login_panel .input_field::placeholder {
+  color: #5f6b7a;  
+}

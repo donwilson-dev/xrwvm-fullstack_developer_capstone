@@ -81,13 +81,14 @@ const Dealer = () => {
 
       <div className="dealer_detail_container">
         <div className="dealer_header">
-          <div>
-            <h1 className="dealer_title">{dealer.full_name}</h1>
-            <p className="dealer_address">
-              {dealer.city}, {dealer.address}, Zip - {dealer.zip},{' '}
-              {dealer.state}
-            </p>
-          </div>
+          <h1 className="dealer_title">{dealer.full_name}</h1>
+          <p className="dealer_address">
+            {dealer.city}, {dealer.address}, Zip - {dealer.zip}, {dealer.state}
+          </p>
+
+          <a className="search_cars_btn" href={`/searchcars/${id}`}>
+            Search Cars
+          </a>
 
           {postReview}
         </div>
